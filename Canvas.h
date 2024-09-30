@@ -51,6 +51,7 @@ private:
     void addShapeData();
     void updateToolbarButtons();
     void updatePenProperties();
+    void setShapeButtonsEnabled(bool enabled);
 };
 
 #endif // CANVAS_H

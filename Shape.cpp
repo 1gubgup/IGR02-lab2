@@ -34,19 +34,6 @@ void Shape::setAttributes(const QColor& c, int t, const Qt::PenStyle s, const Sh
     shapeType = p;
 }
 
-void Shape::setPosition(const QPoint& s, const QPoint& e){
-    startPoint = s;
-    endPoint = e;
-}
-
-QPoint Shape::getStartPosition() const{
-    return startPoint;
-}
-
-QPoint Shape::getEndPosition() const{
-    return endPoint;
-}
-
 
 QColor Shape::getColor() const {
     return color;
@@ -74,17 +61,6 @@ void Shape::setStyle(Qt::PenStyle s) {
 
 Shape::ShapeType Shape::getShapeType() const {
     return shapeType;
-}
-
-void Shape::setShapeType(ShapeType newShapeType, const QPoint& startPoint, const QPoint& endPoint) {
-    if (newShapeType == ShapeType::LineShape) {
-        *this = Line(startPoint, endPoint);
-    } else if (newShapeType == ShapeType::RectangleShape) {
-        *this = Rectangle(startPoint, endPoint);
-    } else if (newShapeType == ShapeType::EllipseShape) {
-        *this = Ellipse(startPoint, endPoint);
-    }
-    shapeType = newShapeType;
 }
 
 

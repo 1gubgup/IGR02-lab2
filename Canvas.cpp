@@ -209,7 +209,6 @@ void Canvas::addShapeData(){
 
     if (shape) {
         shape->setAttributes(currentColor, currentThickness, currentStyle, currentShape);
-        shape->setPosition(startPoint, endPoint);
         shapes.append(shape);
     }
 }
@@ -233,6 +232,7 @@ void Canvas::mousePressEvent(QMouseEvent* event) {
                 isDragging = false;
                 isContain = true;
                 updateToolbarButtons();  // 更新工具栏状态
+                setShapeButtonsEnabled(false);
                 qDebug() << "选择图案，进入编辑模式";
                 break;
             }
@@ -242,6 +242,7 @@ void Canvas::mousePressEvent(QMouseEvent* event) {
         if (!isContain) {
             selectedShape = nullptr;
             updatePenProperties();
+            setShapeButtonsEnabled(true);
             qDebug() << "未选择图案，进入画笔模式";
         }
     }
@@ -342,13 +343,10 @@ void Canvas::setShape(QAbstractButton* button){
     } else if (button->text() == "Ellipse") {
         currentShape = Shape::EllipseShape;
     }
-
-    if (selectedShape) {
-        selectedShape->setShapeType(currentShape, selectedShape->getStartPosition(), selectedShape->getEndPosition());
-        update();
-    }
 }
 
+
+// update
 void Canvas::updateToolbarButtons(){
     if (!selectedShape) return;
 
@@ -424,6 +422,13 @@ void Canvas::updatePenProperties(){
         currentShape = Shape::RectangleShape;
     } else if (shapeGroup->button(2)->isChecked()) {
         currentShape = Shape::EllipseShape;
+    }
+}
+
+void Canvas::setShapeButtonsEnabled(bool enabled) {
+    // 遍历 shapeGroup 中的所有按钮，设置它们的启用/禁用状态
+    for (QAbstractButton* button : shapeGroup->buttons()) {
+        button->setEnabled(enabled);
     }
 }
 

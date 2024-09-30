@@ -16,9 +16,6 @@ public:
 
     enum ShapeType { LineShape, RectangleShape, EllipseShape };
     void setAttributes(const QColor& c, int t, const Qt::PenStyle s, const ShapeType p);
-    void setPosition(const QPoint& startPoint, const QPoint& endPoint);
-    QPoint getStartPosition() const;
-    QPoint getEndPosition() const;
 
     QColor getColor() const;
     void setColor(const QColor& c);
@@ -27,7 +24,6 @@ public:
     Qt::PenStyle getStyle() const;
     void setStyle(Qt::PenStyle s);
     ShapeType getShapeType() const;
-    void setShapeType(ShapeType newShapeType, const QPoint& startPoint, const QPoint& endPoint);
 
 protected:
     QPainterPath path;
@@ -35,9 +31,6 @@ protected:
     int thickness;
     Qt::PenStyle style;
     ShapeType shapeType;
-
-    QPoint startPoint;
-    QPoint endPoint;
 };
 
 
