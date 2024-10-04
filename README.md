@@ -25,7 +25,7 @@ This application is a basic drawing tool developed using the Qt framework. It al
 3. Saving and Loading
 
 - Save: Click on "File" -> "Save" to save the current shapes to a `.path` file.
-- Load: Click on "File" -> "Open" to load shapes from a `.path file`. The canvas will be reset with the loaded shapes.
+- Load: Click on "File" -> "Open" to load shapes from a `.path` file. The canvas will be reset with the loaded shapes.
 
 ### Code Structure
 
