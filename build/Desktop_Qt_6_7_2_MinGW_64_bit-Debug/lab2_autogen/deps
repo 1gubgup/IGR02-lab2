@@ -2,6 +2,8 @@ lab2_autogen/timestamp: \
 	C:/Users/24969/Desktop/Telecom/IGR02/lab2/CMakeLists.txt \
 	C:/Users/24969/Desktop/Telecom/IGR02/lab2/Canvas.cpp \
 	C:/Users/24969/Desktop/Telecom/IGR02/lab2/Canvas.h \
+	C:/Users/24969/Desktop/Telecom/IGR02/lab2/Mainwindow.cpp \
+	C:/Users/24969/Desktop/Telecom/IGR02/lab2/Mainwindow.h \
 	C:/Users/24969/Desktop/Telecom/IGR02/lab2/Shape.cpp \
 	C:/Users/24969/Desktop/Telecom/IGR02/lab2/Shape.h \
 	C:/Users/24969/Desktop/Telecom/IGR02/lab2/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
@@ -10,6 +12,7 @@ lab2_autogen/timestamp: \
 	C:/Users/24969/Desktop/Telecom/IGR02/lab2/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake \
 	C:/Users/24969/Desktop/Telecom/IGR02/lab2/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/lab2_autogen/moc_predefs.h \
 	C:/Users/24969/Desktop/Telecom/IGR02/lab2/main.cpp \
+	C:/Users/24969/Desktop/Telecom/IGR02/lab2/resources.qrc \
 	D:/Qt/6.7.2/mingw_64/include/QtCore/QList \
 	D:/Qt/6.7.2/mingw_64/include/QtCore/QObject \
 	D:/Qt/6.7.2/mingw_64/include/QtCore/QRect \
@@ -188,9 +191,12 @@ lab2_autogen/timestamp: \
 	D:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs.h \
 	D:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h \
 	D:/Qt/6.7.2/mingw_64/include/QtWidgets/QAbstractButton \
+	D:/Qt/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
 	D:/Qt/6.7.2/mingw_64/include/QtWidgets/QWidget \
 	D:/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
+	D:/Qt/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h \
 	D:/Qt/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
+	D:/Qt/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h \
 	D:/Qt/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
 	D:/Qt/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
 	D:/Qt/6.7.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -581,4 +587,5 @@ lab2_autogen/timestamp: \
 	D:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
 	D:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
 	D:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
+	C:/Users/24969/Desktop/Telecom/IGR02/lab2/mainwindow.ui \
 	D:/Qt/Tools/CMake_64/bin/cmake.exe

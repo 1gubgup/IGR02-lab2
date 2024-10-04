@@ -273,7 +273,8 @@
 		"D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets.cmake",
 		"D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake",
 		"D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake"
+		"D:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake",
+		"C:/Users/24969/Desktop/Telecom/IGR02/lab2/resources.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/Users/24969/Desktop/Telecom/IGR02/lab2",
 	"CROSS_CONFIG" : false,
@@ -285,6 +286,12 @@
 			"C:/Users/24969/Desktop/Telecom/IGR02/lab2/Canvas.h",
 			"MU",
 			"EWIEGA46WW/moc_Canvas.cpp",
+			null
+		],
+		[
+			"C:/Users/24969/Desktop/Telecom/IGR02/lab2/Mainwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_Mainwindow.cpp",
 			null
 		],
 		[
@@ -366,6 +373,11 @@
 	"SOURCES" : 
 	[
 		[ "C:/Users/24969/Desktop/Telecom/IGR02/lab2/Canvas.cpp", "MU", null ],
+		[
+			"C:/Users/24969/Desktop/Telecom/IGR02/lab2/Mainwindow.cpp",
+			"MU",
+			null
+		],
 		[ "C:/Users/24969/Desktop/Telecom/IGR02/lab2/Shape.cpp", "MU", null ],
 		[ "C:/Users/24969/Desktop/Telecom/IGR02/lab2/main.cpp", "MU", null ]
 	],

@@ -17,13 +17,16 @@ public:
     enum ShapeType { LineShape, RectangleShape, EllipseShape };
     void setAttributes(const QColor& c, int t, const Qt::PenStyle s, const ShapeType p);
 
-    QColor getColor() const;
+    void setPath(const QPainterPath& p);
     void setColor(const QColor& c);
-    int getThickness() const;
     void setThickness(int t);
-    Qt::PenStyle getStyle() const;
     void setStyle(Qt::PenStyle s);
-    ShapeType getShapeType() const;
+
+    QPainterPath getPath();
+    QColor getColor();
+    int getThickness();
+    Qt::PenStyle getStyle();
+    ShapeType getShape();
 
 protected:
     QPainterPath path;
