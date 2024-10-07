@@ -242,6 +242,13 @@ void MainWindow::openFile() {
                         qreal x = shapeData[++index].toDouble();
                         qreal y = shapeData[++index].toDouble();
                         path.lineTo(x, y);
+                    } else if (elementType == "E") {
+                        // handle ellipse case
+                        qreal x = shapeData[++index].toDouble();
+                        qreal y = shapeData[++index].toDouble();
+                        qreal width = shapeData[++index].toDouble();
+                        qreal height = shapeData[++index].toDouble();
+                        path.addEllipse(QRectF(x, y, width, height));
                     }
                     ++index;
                 }
@@ -301,6 +308,14 @@ void MainWindow::saveFile() {
                         out << "L," << element.x << "," << element.y << ",";
                     }
                 }
+
+                // Special case for ellipse: save as 'E' with bounding rectangle
+                if (shape->getShape() == Shape::EllipseShape) {
+                    QRectF boundingRect = path.boundingRect();
+                    out << "E," << boundingRect.x() << "," << boundingRect.y() << ","
+                        << boundingRect.width() << "," << boundingRect.height() << ",";
+                }
+                
                 out << "\n"; // new line for each shape
             }
 
